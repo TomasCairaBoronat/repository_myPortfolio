@@ -25,19 +25,24 @@ body, html {
   /* The image used */
   background-image: url(../assets/foto2.jpg);
   /* Full height */
-  height: 50%;
+  height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-items: center;
   align-items: center;
-  padding-top: 25%; }
+  padding-top: 0%; }
   .intro .h1Index {
     color: white;
     font-size: 2rem;
+    margin-top: 2%;
     font-weight: 600;
-    margin-bottom: 40%; }
+    margin-bottom: 35%; }
+
+.section2 .section2H2 {
+  align-self: center;
+  justify-self: center; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   /*NavBar movil*/
