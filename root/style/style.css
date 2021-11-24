@@ -4,7 +4,11 @@
   box-sizing: border-box; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  background-color: #182747; }
+
+.texto {
+  color: #d8d8d8; }
 
 /*NavBar*/
 .navbar {
@@ -16,6 +20,9 @@ body, html {
       font-weight: bolder; }
     .navbar .logoNavBar h5 {
       font-weight: bolder; }
+
+hr {
+  color: white; }
 
 /*Intro*/
 .intro {
@@ -36,13 +43,59 @@ body, html {
   .intro .h1Index {
     color: white;
     font-size: 2rem;
-    margin-top: 2%;
+    margin-top: 15%;
     font-weight: 600;
     margin-bottom: 35%; }
 
-.section2 .section2H2 {
-  align-self: center;
-  justify-self: center; }
+.section2 {
+  background-color: #182747;
+  margin-top: 1%; }
+  .section2 .section2H2 {
+    color: #d8d8d8;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1%; }
+  .section2 .desarrolloWeb {
+    display: grid;
+    grid-template-areas: "tituloH3" "iconoPC" "tituloH5" "herramientasUl";
+    grid-template-columns: 12fr;
+    grid-template-rows: 2fr,2fr,2fr,6fr;
+    padding: 0%; }
+    .section2 .desarrolloWeb .iconoPC {
+      grid-area: iconoPC;
+      width: 10%;
+      height: auto;
+      align-self: center;
+      justify-self: center; }
+    .section2 .desarrolloWeb .tituloH3 {
+      font-size: 2rem;
+      grid-area: tituloH3;
+      justify-self: center;
+      align-self: center; }
+    .section2 .desarrolloWeb .tituloH5 {
+      grid-area: tituloH5;
+      justify-self: center;
+      align-self: center; }
+    .section2 .desarrolloWeb .herramientasUl {
+      grid-area: herramientasUl;
+      justify-self: center;
+      align-self: center; }
+
+.section4 {
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  .section4 .contactoUl {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap; }
+    .section4 .contactoUl .logoWpp {
+      margin-top: 1%; }
+      .section4 .contactoUl .logoWpp .bi-whatsapp {
+        margin-right: 1%; }
+    .section4 .contactoUl .logoMail .bi-envelope {
+      margin-right: 1%; }
+    .section4 .contactoUl .logoLi .bi-linkedin {
+      margin-right: 1%; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   /*NavBar movil*/

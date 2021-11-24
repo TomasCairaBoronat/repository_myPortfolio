@@ -1,4 +1,5 @@
 $colorNavBar: #14213D;
+$colorSection:#182747;
 $colorPrincipal: #d8d8d8;
 $colorIndex:rgb(255, 255, 255);
 * {
@@ -8,6 +9,10 @@ $colorIndex:rgb(255, 255, 255);
 
   body, html {
     height: 100%;
+    background-color: $colorSection;
+  }
+  .texto{
+    color: $colorPrincipal;
   }
 /*NavBar*/
 .navbar{
@@ -22,6 +27,9 @@ $colorIndex:rgb(255, 255, 255);
       font-weight: bolder;
     }
   }
+}
+hr{
+  color: white;
 }
 /*Intro*/
 .intro{
@@ -44,16 +52,82 @@ $colorIndex:rgb(255, 255, 255);
   .h1Index{
     color: $colorIndex;
     font-size: 2rem;
-    margin-top: 2%;
+    margin-top: 15%;
     font-weight: 600;
     margin-bottom: 35%;
 
   }
 }
 .section2{
+  background-color: $colorSection;
+  margin-top: 1%;
   .section2H2{
+    color: $colorPrincipal;
     align-self: center;
     justify-self: center;
+    margin-bottom: 1%;
+  }
+  .desarrolloWeb{
+    display: grid;
+    grid-template-areas: 
+    "tituloH3"
+    "iconoPC"
+    "tituloH5"
+    "herramientasUl";
+    grid-template-columns: 12fr;
+    grid-template-rows: 2fr,2fr,2fr,6fr ;
+    padding: 0%;
+    .iconoPC{
+      grid-area: iconoPC;
+      width: 10%;
+      height: auto;
+      align-self: center;
+      justify-self: center;
+    }
+    .tituloH3{
+      font-size: 2rem;
+      grid-area: tituloH3;
+      justify-self: center;
+      align-self: center;
+    }
+    .tituloH5{
+      grid-area: tituloH5;
+      justify-self: center;
+      align-self: center;
+      
+    }
+    .herramientasUl{
+      grid-area: herramientasUl;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
+.section4{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  .contactoUl{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    .logoWpp{
+     margin-top: 1%;
+      .bi-whatsapp{
+        margin-right: 1%;
+      }
+    }
+    .logoMail{
+      
+      .bi-envelope{
+        margin-right: 1%;
+      }
+    }
+    .logoLi{
+      
+      .bi-linkedin{
+        margin-right: 1%;
+      }
+    }
   }
 }
 
