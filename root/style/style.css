@@ -22,6 +22,8 @@ body, html {
       font-weight: bolder; }
     .navbar .logoNavBar h5 {
       font-weight: bolder; }
+  .navbar .navbarUl {
+    font-size: 1.2rem; }
 
 hr {
   color: white; }
