@@ -51,6 +51,7 @@ hr {
     font-weight: 600;
     margin-bottom: 35%; }
 
+/*Section 2*/
 .section2 {
   background-color: #182747;
   margin-top: 1%; }
@@ -85,6 +86,7 @@ hr {
       justify-self: center;
       align-self: center; }
 
+/*Section 4*/
 .section4 {
   margin-top: 2%;
   margin-bottom: 2%; }
@@ -100,6 +102,26 @@ hr {
       margin-right: 1%; }
     .section4 .contactoUl .logoLi .bi-linkedin {
       margin-right: 1%; }
+
+/*Footer*/
+.footerGrid {
+  display: grid;
+  grid-template-areas: "logoFooter derechosFooter contactosFooter "; }
+  .footerGrid .logoFooter {
+    grid-area: logoFooter; }
+  .footerGrid .derechosFooter {
+    grid-area: derechosFooter; }
+  .footerGrid .contactosFooter {
+    grid-area: contactosFooter; }
+
+#botonInicio {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  width: 50px;
+  height: auto; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   /*NavBar movil*/
@@ -120,7 +142,66 @@ hr {
       margin-top: 5%;
       font-weight: 600;
       z-index: 2;
-      top: 25%; } }
+      top: 25%; }
+  /*Footer movil*/
+  .footerGrid {
+    display: grid;
+    grid-template-areas: "logoFooter"  "contactosFooter" "derechosFooter";
+    margin-bottom: 10%;
+    grid-template-columns: 12fr;
+    grid-template-rows: 3,3,6; }
+    .footerGrid .logoFooter {
+      grid-area: logoFooter;
+      display: grid;
+      grid-template-areas: "tC" "wD";
+      padding-left: 25%; }
+      .footerGrid .logoFooter .tC {
+        grid-area: tC;
+        padding-left: 3%; }
+      .footerGrid .logoFooter .wD {
+        grid-area: wD; }
+    .footerGrid .derechosFooter {
+      grid-area: derechosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-left: 30%; }
+    .footerGrid .contactosFooter {
+      grid-area: contactosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 4%;
+      padding-left: 28%; } }
+
+/*Movil Chico*/
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  /*Footer movil chico*/
+  .footerGrid {
+    display: grid;
+    grid-template-areas: "logoFooter"  "contactosFooter" "derechosFooter";
+    margin-bottom: 10%;
+    grid-template-columns: 12fr;
+    grid-template-rows: 3,3,6; }
+    .footerGrid .logoFooter {
+      grid-area: logoFooter;
+      display: grid;
+      grid-template-areas: "tC" "wD";
+      padding-left: 20%; }
+      .footerGrid .logoFooter .tC {
+        grid-area: tC;
+        padding-left: 3%; }
+      .footerGrid .logoFooter .wD {
+        grid-area: wD; }
+    .footerGrid .derechosFooter {
+      grid-area: derechosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-left: 28%; }
+    .footerGrid .contactosFooter {
+      grid-area: contactosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 4%;
+      padding-left: 28%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*NavBar tablet chica*/

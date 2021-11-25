@@ -63,6 +63,7 @@ hr{
 
   }
 }
+/*Section 2*/
 .section2{
   background-color: $colorSection;
   margin-top: 1%;
@@ -108,6 +109,7 @@ hr{
     }
   }
 }
+/*Section 4*/
 .section4{
   margin-top: 2%;
   margin-bottom: 2%;
@@ -135,6 +137,30 @@ hr{
     }
   }
 }
+/*Footer*/
+.footerGrid{
+  display: grid;
+  grid-template-areas: 
+  "logoFooter derechosFooter contactosFooter ";
+  .logoFooter{
+    grid-area: logoFooter;
+  }
+  .derechosFooter{
+    grid-area: derechosFooter;
+  }
+  .contactosFooter{
+    grid-area: contactosFooter;
+  }
+}
+#botonInicio{
+  position: fixed;
+  bottom: 20px; 
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  width: 50px;
+  height: auto; 
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
   /*NavBar movil*/
@@ -160,8 +186,92 @@ hr{
       font-weight: 600;
       z-index: 2;
       top: 25%;}
-}}
-
+  }
+  /*Footer movil*/
+.footerGrid{
+  display: grid;
+  grid-template-areas: 
+  "logoFooter" 
+  "contactosFooter"
+  "derechosFooter"; 
+  margin-bottom: 10%;
+  grid-template-columns: 12fr;
+  grid-template-rows: 3,3,6;
+  
+  .logoFooter{
+    grid-area: logoFooter;
+    display: grid;
+    grid-template-areas: 
+    "tC"
+    "wD";
+    padding-left: 25%;
+    .tC{
+      grid-area: tC;
+      padding-left: 3%;
+    }
+    .wD{
+      grid-area: wD;
+    }
+  }
+  .derechosFooter{
+    grid-area: derechosFooter;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 30%;
+  }
+  .contactosFooter{
+    grid-area: contactosFooter;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+    padding-left: 28%;
+  }
+}
+}
+/*Movil Chico*/
+@media screen and (min-width:321px) and (max-width:374px){
+  /*Footer movil chico*/
+  .footerGrid{
+    display: grid;
+    grid-template-areas: 
+    "logoFooter" 
+    "contactosFooter"
+    "derechosFooter"; 
+    margin-bottom: 10%;
+    grid-template-columns: 12fr;
+    grid-template-rows: 3,3,6;
+    
+    .logoFooter{
+      grid-area: logoFooter;
+      display: grid;
+      grid-template-areas: 
+      "tC"
+      "wD";
+      padding-left: 20%;
+      .tC{
+        grid-area: tC;
+        padding-left: 3%;
+      }
+      .wD{
+        grid-area: wD;
+      }
+    }
+    .derechosFooter{
+      grid-area: derechosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-left: 28%;
+    }
+    .contactosFooter{
+      grid-area: contactosFooter;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 4%;
+      padding-left: 28%;
+    }
+  }
+  
+  }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   /*NavBar tablet chica*/
   .navbar{
