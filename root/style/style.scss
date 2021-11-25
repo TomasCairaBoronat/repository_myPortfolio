@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 $colorNavBar: #14213D;
+$colorBody:#182747;
 $colorSection:#182747;
 $colorPrincipal: #d8d8d8;
 $colorIndex:rgb(255, 255, 255);
+
 * {
   margin: 0%;
   padding: 0%;
@@ -10,7 +12,7 @@ $colorIndex:rgb(255, 255, 255);
 
   body, html {
     height: 100%;
-    background-color: $colorSection;
+    background-color: $colorBody;
     font-family: 'Open Sans', sans-serif;
   }
   .texto{
@@ -109,6 +111,27 @@ hr{
     }
   }
 }
+/*Section 3*/
+.section3{
+  display: flex;
+  flex-flow: column wrap;
+  .paginas{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+      justify-self: center;
+      margin-bottom: 2%;
+    .tarjeta{
+      width: 18rem;
+      .tituloCard{
+        color: black;
+        :hover{
+          color: gray;
+        }
+      }
+    }
+  }
+}
 /*Section 4*/
 .section4{
   margin-top: 2%;
@@ -117,6 +140,12 @@ hr{
     list-style-type: none;
     display: flex;
     flex-flow: column wrap;
+    :hover{
+      color: gray;
+    }
+    :active{
+      color: $colorPrincipal;
+    }
     .logoWpp{
      margin-top: 1%;
       .bi-whatsapp{
@@ -144,12 +173,24 @@ hr{
   "logoFooter derechosFooter contactosFooter ";
   .logoFooter{
     grid-area: logoFooter;
+    :hover{
+      color: gray;
+    }
+    :active{
+      color: $colorPrincipal;
+    }
   }
   .derechosFooter{
     grid-area: derechosFooter;
   }
   .contactosFooter{
     grid-area: contactosFooter;
+  }
+  .nombreFooter:hover{
+      color: gray;
+  }
+  .nombreFooter2:hover{
+    color: gray;
   }
 }
 #botonInicio{
@@ -182,10 +223,48 @@ hr{
       font-size: 1.8rem;
       justify-self: center;
       align-self: center;
-      margin-top: 5%;
+      margin-top: 15%;
       font-weight: 600;
       z-index: 2;
       top: 25%;}
+  }
+  /*Section 2 movil*/
+  .section2{
+    .desarrolloWeb{
+      .tituloH3{
+        margin-top: 5%;
+      }
+      .iconoPC{
+        grid-area: iconoPC;
+        width: 30%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+      }
+    } 
+    
+  } 
+  /*Section 3 movil*/
+  .section3{
+    display: flex;
+    flex-flow: column wrap;
+    .paginas{
+      display: flex;
+      flex-flow: row wrap;
+      align-self: center;
+        justify-self: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 15rem;
+      .tarjeta{
+        .tituloCard{
+          color: black;
+          :hover{
+            color: gray;
+          }
+        }
+      }
+    }
   }
   /*Footer movil*/
 .footerGrid{
@@ -217,13 +296,14 @@ hr{
     grid-area: derechosFooter;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 1%;
     padding-left: 30%;
   }
   .contactosFooter{
     grid-area: contactosFooter;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 4%;
+    margin-left: 7%;
     padding-left: 28%;
   }
 }
@@ -282,6 +362,22 @@ hr{
       background-color: $colorNavBar;
     }
   }
+  /*Section 2 tablet*/
+  .section2{
+    .desarrolloWeb{
+      .tituloH3{
+        margin-top: 2%;
+      }
+      .iconoPC{
+        grid-area: iconoPC;
+        width: 20%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+      }
+    } 
+    
+  } 
   }
   @media screen and (min-width: 1022px) and (max-width: 1081px){
     .intro{

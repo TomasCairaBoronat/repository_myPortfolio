@@ -86,6 +86,23 @@ hr {
       justify-self: center;
       align-self: center; }
 
+/*Section 3*/
+.section3 {
+  display: flex;
+  flex-flow: column wrap; }
+  .section3 .paginas {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 2%; }
+    .section3 .paginas .tarjeta {
+      width: 18rem; }
+      .section3 .paginas .tarjeta .tituloCard {
+        color: black; }
+        .section3 .paginas .tarjeta .tituloCard :hover {
+          color: gray; }
+
 /*Section 4*/
 .section4 {
   margin-top: 2%;
@@ -94,6 +111,10 @@ hr {
     list-style-type: none;
     display: flex;
     flex-flow: column wrap; }
+    .section4 .contactoUl :hover {
+      color: gray; }
+    .section4 .contactoUl :active {
+      color: #d8d8d8; }
     .section4 .contactoUl .logoWpp {
       margin-top: 1%; }
       .section4 .contactoUl .logoWpp .bi-whatsapp {
@@ -109,10 +130,18 @@ hr {
   grid-template-areas: "logoFooter derechosFooter contactosFooter "; }
   .footerGrid .logoFooter {
     grid-area: logoFooter; }
+    .footerGrid .logoFooter :hover {
+      color: gray; }
+    .footerGrid .logoFooter :active {
+      color: #d8d8d8; }
   .footerGrid .derechosFooter {
     grid-area: derechosFooter; }
   .footerGrid .contactosFooter {
     grid-area: contactosFooter; }
+  .footerGrid .nombreFooter:hover {
+    color: gray; }
+  .footerGrid .nombreFooter2:hover {
+    color: gray; }
 
 #botonInicio {
   position: fixed;
@@ -139,10 +168,35 @@ hr {
       font-size: 1.8rem;
       justify-self: center;
       align-self: center;
-      margin-top: 5%;
+      margin-top: 15%;
       font-weight: 600;
       z-index: 2;
       top: 25%; }
+  /*Section 2 movil*/
+  .section2 .desarrolloWeb .tituloH3 {
+    margin-top: 5%; }
+  .section2 .desarrolloWeb .iconoPC {
+    grid-area: iconoPC;
+    width: 30%;
+    height: auto;
+    align-self: center;
+    justify-self: center; }
+  /*Section 3 movil*/
+  .section3 {
+    display: flex;
+    flex-flow: column wrap; }
+    .section3 .paginas {
+      display: flex;
+      flex-flow: row wrap;
+      align-self: center;
+      justify-self: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      width: 15rem; }
+      .section3 .paginas .tarjeta .tituloCard {
+        color: black; }
+        .section3 .paginas .tarjeta .tituloCard :hover {
+          color: gray; }
   /*Footer movil*/
   .footerGrid {
     display: grid;
@@ -164,12 +218,13 @@ hr {
       grid-area: derechosFooter;
       margin-top: 5%;
       margin-bottom: 5%;
+      margin-left: 1%;
       padding-left: 30%; }
     .footerGrid .contactosFooter {
       grid-area: contactosFooter;
       margin-top: 5%;
       margin-bottom: 5%;
-      margin-left: 4%;
+      margin-left: 7%;
       padding-left: 28%; } }
 
 /*Movil Chico*/
@@ -208,7 +263,16 @@ hr {
   .navbar .offcanvas-header {
     background-color: #14213D; }
   .navbar .offcanvas-body {
-    background-color: #14213D; } }
+    background-color: #14213D; }
+  /*Section 2 tablet*/
+  .section2 .desarrolloWeb .tituloH3 {
+    margin-top: 2%; }
+  .section2 .desarrolloWeb .iconoPC {
+    grid-area: iconoPC;
+    width: 20%;
+    height: auto;
+    align-self: center;
+    justify-self: center; } }
 
 @media screen and (min-width: 1022px) and (max-width: 1081px) {
   .intro {
