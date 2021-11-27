@@ -93,8 +93,8 @@ hr {
   .section3 .paginas {
     display: flex;
     flex-flow: row wrap;
-    align-self: center;
-    justify-self: center;
+    align-content: center;
+    justify-content: center;
     margin-bottom: 2%; }
     .section3 .paginas .tarjeta {
       width: 18rem; }

@@ -118,8 +118,8 @@ hr{
   .paginas{
     display: flex;
     flex-flow: row wrap;
-    align-self: center;
-      justify-self: center;
+    align-content: center;
+      justify-content: center;
       margin-bottom: 2%;
     .tarjeta{
       width: 18rem;
