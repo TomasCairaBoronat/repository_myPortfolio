@@ -89,12 +89,12 @@ hr {
 /*Section 3*/
 .section3 {
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: column nowrap; }
   .section3 .mco {
     margin-right: 5%; }
   .section3 .paginas {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-content: center;
     justify-content: center;
     margin-bottom: 2%; }
