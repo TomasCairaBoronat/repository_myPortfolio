@@ -115,17 +115,25 @@ hr{
 .section3{
   display: flex;
   flex-flow: column nowrap;
-  .mco{
-    margin-right: 5%;
-  }
   .paginas{
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-      justify-content: center;
-      margin-bottom: 2%;
-    .tarjeta{
+    justify-content: center;
+    margin-bottom: 2%;
+    .tarjeta1{
       width: 18rem;
+      margin-right: 2%;
+      .tituloCard{
+        color: black;
+        :hover{
+          color: gray;
+        }
+      }
+    }
+    .tarjeta2{
+      width: 18rem;
+      margin-right: 2%;
       .tituloCard{
         color: black;
         :hover{
@@ -263,14 +271,27 @@ hr{
         margin-top: 2%;
         margin-bottom: 2%;
         width: 15rem;
-      .tarjeta{
-        .tituloCard{
-          color: black;
-          :hover{
-            color: gray;
+        .tarjeta1{
+          width: 18rem;
+          margin-right: 0%;
+          margin-bottom: 5%;
+          .tituloCard{
+            color: black;
+            :hover{
+              color: gray;
+            }
           }
         }
-      }
+        .tarjeta2{
+          width: 18rem;
+          margin-right: 0%;
+          .tituloCard{
+            color: black;
+            :hover{
+              color: gray;
+            }
+          }
+        }
     }
   }
   /*Footer movil*/

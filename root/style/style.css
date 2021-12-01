@@ -90,19 +90,25 @@ hr {
 .section3 {
   display: flex;
   flex-flow: column nowrap; }
-  .section3 .mco {
-    margin-right: 5%; }
   .section3 .paginas {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
     margin-bottom: 2%; }
-    .section3 .paginas .tarjeta {
-      width: 18rem; }
-      .section3 .paginas .tarjeta .tituloCard {
+    .section3 .paginas .tarjeta1 {
+      width: 18rem;
+      margin-right: 2%; }
+      .section3 .paginas .tarjeta1 .tituloCard {
         color: black; }
-        .section3 .paginas .tarjeta .tituloCard :hover {
+        .section3 .paginas .tarjeta1 .tituloCard :hover {
+          color: gray; }
+    .section3 .paginas .tarjeta2 {
+      width: 18rem;
+      margin-right: 2%; }
+      .section3 .paginas .tarjeta2 .tituloCard {
+        color: black; }
+        .section3 .paginas .tarjeta2 .tituloCard :hover {
           color: gray; }
 
 /*Section 4*/
@@ -198,10 +204,21 @@ hr {
       margin-top: 2%;
       margin-bottom: 2%;
       width: 15rem; }
-      .section3 .paginas .tarjeta .tituloCard {
-        color: black; }
-        .section3 .paginas .tarjeta .tituloCard :hover {
-          color: gray; }
+      .section3 .paginas .tarjeta1 {
+        width: 18rem;
+        margin-right: 0%;
+        margin-bottom: 5%; }
+        .section3 .paginas .tarjeta1 .tituloCard {
+          color: black; }
+          .section3 .paginas .tarjeta1 .tituloCard :hover {
+            color: gray; }
+      .section3 .paginas .tarjeta2 {
+        width: 18rem;
+        margin-right: 0%; }
+        .section3 .paginas .tarjeta2 .tituloCard {
+          color: black; }
+          .section3 .paginas .tarjeta2 .tituloCard :hover {
+            color: gray; }
   /*Footer movil*/
   .footerGrid {
     display: grid;
