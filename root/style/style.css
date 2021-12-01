@@ -90,9 +90,11 @@ hr {
 .section3 {
   display: flex;
   flex-flow: column wrap; }
+  .section3 .mco {
+    margin-right: 5%; }
   .section3 .paginas {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-content: center;
     justify-content: center;
     margin-bottom: 2%; }
@@ -185,6 +187,9 @@ hr {
   .section3 {
     display: flex;
     flex-flow: column wrap; }
+    .section3 .mco {
+      margin-right: 0%;
+      margin-bottom: 8%; }
     .section3 .paginas {
       display: flex;
       flex-flow: row wrap;
