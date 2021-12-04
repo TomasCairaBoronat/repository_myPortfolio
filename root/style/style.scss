@@ -299,6 +299,13 @@ hr{
         }
     }
   }
+  /*Section 4 movil*/
+  .logoGithub{
+    padding-top: 4%;
+    .bi-github{
+      margin-right: 1%;
+    }
+  }
   /*Footer movil*/
 .footerGrid{
   display: grid;
@@ -336,7 +343,7 @@ hr{
     grid-area: contactosFooter;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 7%;
+    margin-left: 0%;
     padding-left: 28%;
   }
 }
@@ -379,8 +386,8 @@ hr{
       grid-area: contactosFooter;
       margin-top: 5%;
       margin-bottom: 5%;
-      margin-left: 4%;
-      padding-left: 28%;
+      margin-left: 0%;
+      padding-left: 25%;
     }
   }
   
