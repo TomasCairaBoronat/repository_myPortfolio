@@ -216,7 +216,8 @@ hr {
             color: gray; }
       .section3 .paginas .tarjeta2 {
         width: 18rem;
-        margin-right: 0%; }
+        margin-right: 0%;
+        margin-bottom: 5%; }
         .section3 .paginas .tarjeta2 .tituloCard {
           color: black; }
           .section3 .paginas .tarjeta2 .tituloCard :hover {
